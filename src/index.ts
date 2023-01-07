@@ -1,3 +1,4 @@
-import { Add } from "./math";
+import { Add } from './math';
+import { isValid, pad } from './Utils';
 
-export { Add };
+export { Add, isValid, pad };
