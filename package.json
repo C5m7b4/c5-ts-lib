@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "lint": "eslint  . --ext .ts",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:coverage": "jest --coverage",
     "view:coverage": "start coverage/lcov-report/index.html",
     "test:watch": "jest --watch"
