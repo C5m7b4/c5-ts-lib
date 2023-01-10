@@ -1,4 +1,4 @@
 import { Add } from './math';
-import { isValid, pad } from './Utils';
+import { isValid, pad, addDays, formatDate } from './Utils';
 
-export { Add, isValid, pad };
+export { Add, isValid, pad, addDays, formatDate };
