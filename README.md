@@ -14,3 +14,4 @@ This function can be used to validate that a string or a number or date or array
 ## pad
 
 This function will either left or right pad a string for you
+
