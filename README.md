@@ -10,17 +10,34 @@
 This is my attempt at a typescript library aimed at helping make peoples lives a little easier when coding. Here are the components that are currently offered.
 
 - [addDays](#adddays)
+- [append](#append)
+- [date](#date)
 - [formatDate](#formatdate)
+- [formatMoney](#formatmoney)
 - [isValid](#isvalid)
 - [pad](#pad)
+- [prop](#prop)
+- [swap](#swap)
 
 ## addDays
 
 This function will let you either pass in a string or a date object and it will add the specified days to it. If you pass in null or undefined, you will get back a new Date;
 
+## append
+
+This function just appends two strings
+
+## date
+
+This library has functions like get DateDetails, daysInMonth, isSameMonth, IsSameDay, getDayOfDate, and getMonthName
+
 ## formatDate
 
 This function will return back a basic date like 1/1/2023. If you pass in null or undefined, you will get back an empty string.
+
+## formatMoney
+
+This function will nicely format money for report purposes
 
 ## isValid
 
@@ -30,3 +47,10 @@ This function can be used to validate that a string or a number or date or array
 
 This function will either left or right pad a string for you
 
+## prop
+
+This function fetches properties of objects
+
+## swap
+
+This function will swap two indexes out of an array
