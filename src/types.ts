@@ -4,3 +4,5 @@ export type PadInput = string | number;
 export type PadDirection = 'left' | 'right';
 
 export type FormatDateType = Date | string;
+
+export type MoneyInput = string | number;
