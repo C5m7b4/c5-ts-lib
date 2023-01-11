@@ -11,6 +11,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 
 - [addDays](#adddays)
 - [append](#append)
+- [curry]
 - [date](#date)
 - [formatDate](#formatdate)
 - [formatMoney](#formatmoney)
@@ -26,6 +27,10 @@ This function will let you either pass in a string or a date object and it will 
 ## append
 
 This function just appends two strings
+
+## curry
+
+This is a very powerful function that allows you to curry a function that takes multiple arguments
 
 ## date
 
