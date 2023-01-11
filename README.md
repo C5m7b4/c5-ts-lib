@@ -9,8 +9,18 @@
 
 This is my attempt at a typescript library aimed at helping make peoples lives a little easier when coding. Here are the components that are currently offered.
 
+- [addDays](#adddays)
+- [formatDate](#formatdate)
 - [isValid](#isvalid)
 - [pad](#pad)
+
+## addDays
+
+This function will let you either pass in a string or a date object and it will add the specified days to it. If you pass in null or undefined, you will get back a new Date;
+
+## formatDate
+
+This function will return back a basic date like 1/1/2023. If you pass in null or undefined, you will get back an empty string.
 
 ## isValid
 
