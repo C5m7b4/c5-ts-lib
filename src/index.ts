@@ -15,6 +15,7 @@ import {
   prop,
   swap,
 } from './Utils';
+import { curry } from './curry';
 
 export * from './types';
 
@@ -34,4 +35,5 @@ export {
   pad,
   prop,
   swap,
+  curry,
 };

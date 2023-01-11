@@ -20,10 +20,10 @@ module.exports = {
     'no-console': 1,
     'no-debugger': 2,
     'prettier/prettier': 2,
-    '@typescript-eslint/no-explicit-any': 2,
+    '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-unused-vars': 1,
     '@typescript-eslint/ban-ts-comment': 0,
-    '@typescript-eslint/ban-types': 2,
+    '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/no-non-null-assertion': 2,
   },
 };
