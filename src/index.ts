@@ -17,6 +17,7 @@ import {
 } from './Utils';
 import { curry } from './curry';
 import { compose } from './compose';
+import { Stack } from './Stack';
 
 export * from './types';
 
@@ -37,5 +38,6 @@ export {
   isValid,
   pad,
   prop,
+  Stack,
   swap,
 };
