@@ -31,7 +31,7 @@ This function just appends two strings
 
 ## compose
 
-This function will chaing to together a number of functions passing the output of each function to the input of the next function
+This function will chain together a number of functions passing the output of each function to the input of the next function
 
 ## curry
 
