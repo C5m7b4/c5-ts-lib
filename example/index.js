@@ -51,3 +51,53 @@ const getItemsByCategory = getItems('candy');
 const getPricesOverTwoDollars = getItemsByCategory(2);
 
 console.log(getPricesOverTwoDollars);
+
+const reduced = [1, 2, 3, 4, 5, 6].reduce((acc, cur) => {
+  return acc + cur;
+}, 0);
+
+console.log(reduced);
+
+import { compose } from '../src';
+
+const people = [
+  {
+    id: 1,
+    first: 'tim',
+    last: 'kelly',
+  },
+  {
+    id: 2,
+    first: 'kathy',
+    last: 'bates',
+  },
+];
+
+const lowerFirst = (x) =>
+  x.map((p) => ({ ...p, first: p.first.toLowerCase() }));
+
+const lowerLast = (x) => x.map((p) => ({ ...p, last: p.last.toLowerCase() }));
+
+const capitalizeFirst = (x) =>
+  x.map((p) => ({
+    ...p,
+    first: [p.first.substring(0, 1).toUpperCase(), p.first.slice(1)].join(''),
+  }));
+
+const capitalizeLast = (x) =>
+  x.map((p) => ({
+    ...p,
+    last: [p.last.substring(0, 1).toUpperCase(), p.last.slice(1)].join(''),
+  }));
+
+const concat = (x) => x.map((p) => [p.first, p.last].join(' '));
+
+const getPeople = compose(
+  lowerFirst,
+  lowerLast,
+  capitalizeFirst,
+  capitalizeLast,
+  concat
+);
+
+console.log(getPeople(people));

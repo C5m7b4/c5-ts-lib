@@ -16,6 +16,7 @@ import {
   swap,
 } from './Utils';
 import { curry } from './curry';
+import { compose } from './compose';
 
 export * from './types';
 
@@ -23,6 +24,8 @@ export {
   Add,
   addDays,
   append,
+  compose,
+  curry,
   getDayOfDate,
   getMonthName,
   daysInMonth,
@@ -35,5 +38,4 @@ export {
   pad,
   prop,
   swap,
-  curry,
 };
