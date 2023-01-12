@@ -66,6 +66,18 @@ This function fetches properties of objects
 
 This class is the classic stack class. It is LIFO(last in, first out)
 
+## queue
+
+queue is a data struccture that is FIFO (first in first out)
+these are the methods
+
+- enqueue
+- dequeue
+- size
+
 ## swap
 
 This function will swap two indexes out of an array
+
+
+
