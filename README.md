@@ -19,7 +19,8 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [isValid](#isvalid)
 - [pad](#pad)
 - [prop](#prop)
-- [stack](#stack)
+- [Queue](#queue)
+- [Stack](#stack)
 - [swap](#swap)
 
 ## addDays
