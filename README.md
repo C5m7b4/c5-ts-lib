@@ -19,6 +19,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [isValid](#isvalid)
 - [pad](#pad)
 - [prop](#prop)
+- [stack](#stack)
 - [swap](#swap)
 
 ## addDays
@@ -60,6 +61,10 @@ This function will either left or right pad a string for you
 ## prop
 
 This function fetches properties of objects
+
+## stack
+
+This class is the classic stack class. It is LIFO(last in, first out)
 
 ## swap
 

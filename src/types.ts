@@ -6,3 +6,10 @@ export type PadDirection = 'left' | 'right';
 export type FormatDateType = Date | string;
 
 export type MoneyInput = string | number;
+
+export interface IStack<T> {
+  push(item: T): void;
+  pop(): T | undefined;
+  peek(): T | undefined;
+  size(): number;
+}
