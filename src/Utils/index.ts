@@ -14,6 +14,7 @@ import {
 import { formatMoney } from './formatMoney';
 import { prop } from './prop';
 import { swap } from './swap';
+import { trace, traceMap } from './trace';
 
 export {
   addDays,
@@ -30,4 +31,6 @@ export {
   pad,
   prop,
   swap,
+  trace,
+  traceMap,
 };

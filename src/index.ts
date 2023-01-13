@@ -14,13 +14,24 @@ import {
   pad,
   prop,
   swap,
+  trace,
+  traceMap,
 } from './Utils';
 import { curry } from './curry';
 import { compose } from './compose';
 import { Stack } from './Stack';
 import { Queue } from './Queue';
+import { Id } from './Id';
 
-export * from './types';
+import {
+  isValidType,
+  PadInput,
+  PadDirection,
+  FormatDateType,
+  MoneyInput,
+  IStack,
+  IQueue,
+} from './types';
 
 export {
   Add,
@@ -32,14 +43,24 @@ export {
   getMonthName,
   daysInMonth,
   formatDate,
+  FormatDateType,
   formatMoney,
   getDateDetails,
+  Id,
   isSameDay,
   isSameMonth,
+  IQueue,
+  IStack,
   isValid,
+  isValidType,
+  MoneyInput,
   pad,
+  PadDirection,
+  PadInput,
   prop,
   Queue,
   Stack,
   swap,
+  trace,
+  traceMap,
 };
