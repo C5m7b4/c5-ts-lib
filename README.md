@@ -16,12 +16,15 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [date](#date)
 - [formatDate](#formatdate)
 - [formatMoney](#formatmoney)
+- [Id](#id)
 - [isValid](#isvalid)
 - [pad](#pad)
 - [prop](#prop)
 - [Queue](#queue)
 - [Stack](#stack)
 - [swap](#swap)
+- [trace](#trace)
+- [traceMap](#tracemap)
 
 ## addDays
 
@@ -50,6 +53,10 @@ This function will return back a basic date like 1/1/2023. If you pass in null o
 ## formatMoney
 
 This function will nicely format money for report purposes
+
+## Id
+
+This is the identity monad
 
 ## isValid
 
@@ -80,5 +87,10 @@ these are the methods
 
 This function will swap two indexes out of an array
 
+## trace
 
+This function can be used to debug your monads
 
+## traceMap
+
+This is another useful debugging tool for you monads
