@@ -11,6 +11,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 
 - [addDays](#adddays)
 - [append](#append)
+- [Box](#box)
 - [compose](#compose)
 - [curry](#curry)
 - [date](#date)
@@ -33,6 +34,10 @@ This function will let you either pass in a string or a date object and it will 
 ## append
 
 This function just appends two strings
+
+## Box
+
+This monad has many uses. It allow you to map over your data to transform it into anything you want.
 
 ## compose
 

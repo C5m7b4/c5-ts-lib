@@ -22,6 +22,7 @@ import { compose } from './compose';
 import { Stack } from './Stack';
 import { Queue } from './Queue';
 import { Id } from './Id';
+import { Box } from './Box';
 
 import {
   isValidType,
@@ -37,6 +38,7 @@ export {
   Add,
   addDays,
   append,
+  Box,
   compose,
   curry,
   getDayOfDate,

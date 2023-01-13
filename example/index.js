@@ -139,3 +139,35 @@ console.log('result3', result3);
 
 const result = trace('Id monad left identity')([Id(x).chain(f), f(x)]);
 console.log('restul', result.toString());
+
+import { Box } from '../src';
+
+const serialKillers = [
+  {
+    name: 'Jeffry',
+    faction: 'bathhouse',
+  },
+  {
+    name: 'Jack the Ripper',
+    faction: 'notorious',
+  },
+  {
+    name: 'John Wayne Gacy',
+    faction: 'construction',
+  },
+];
+
+const whosHeadIsInTheBox = (data) =>
+  Box(data)
+    .map((x) => x.filter((k) => k.faction === 'bathhouse'))
+    .map((x) => x.map((k) => k.name));
+
+console.log(whosHeadIsInTheBox(serialKillers));
+
+const whosHeadIsInTheBoxUnfolded = (data) =>
+  Box(data)
+    .map((x) => x.filter((k) => k.faction === 'bathhouse'))
+    .map((x) => x.map((k) => k.name))
+    .fold((x) => x);
+
+console.log(whosHeadIsInTheBoxUnfolded(serialKillers));
