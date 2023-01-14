@@ -23,6 +23,7 @@ import { Stack } from './Stack';
 import { Queue } from './Queue';
 import { Id } from './Id';
 import { Box } from './Box';
+import { Maybe } from './Maybe';
 
 import {
   isValidType,
@@ -55,6 +56,7 @@ export {
   IStack,
   isValid,
   isValidType,
+  Maybe,
   MoneyInput,
   pad,
   PadDirection,
