@@ -19,6 +19,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [formatMoney](#formatmoney)
 - [Id](#id)
 - [isValid](#isvalid)
+- [Maybe](#maybe)
 - [pad](#pad)
 - [prop](#prop)
 - [Queue](#queue)
@@ -66,6 +67,10 @@ This is the identity monad
 ## isValid
 
 This function can be used to validate that a string or a number or date or array or even an object can be used. This is your failsafe function.
+
+## Maybe
+
+Another monad, but this one handle null input very well
 
 ## pad
 
