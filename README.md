@@ -22,6 +22,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [Maybe](#maybe)
 - [pad](#pad)
 - [prop](#prop)
+- [QuickSort](#quicksort)
 - [Queue](#queue)
 - [Stack](#stack)
 - [swap](#swap)
@@ -83,6 +84,10 @@ This function fetches properties of objects
 ## stack
 
 This class is the classic stack class. It is LIFO(last in, first out)
+
+## QuickSort
+
+A Sorting algorithm that uses a pivot to split data and then sort the left and right and then swap out indexes in the array to sort the data. This supports ascending and desending order as well as arrays of objects. 
 
 ## queue
 

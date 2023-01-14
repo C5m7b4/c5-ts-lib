@@ -171,3 +171,11 @@ const whosHeadIsInTheBoxUnfolded = (data) =>
     .fold((x) => x);
 
 console.log(whosHeadIsInTheBoxUnfolded(serialKillers));
+
+import { QuickSort } from '../src';
+
+const numbers = [5, 1, 9, 3];
+const sortedAsc = QuickSort(numbers);
+console.log('asc', sortedAsc);
+const sortedDesc = QuickSort(numbers, false);
+console.log('desc', sortedDesc);
