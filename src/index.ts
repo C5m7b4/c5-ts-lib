@@ -24,6 +24,7 @@ import { Queue } from './Queue';
 import { Id } from './Id';
 import { Box } from './Box';
 import { Maybe } from './Maybe';
+import { QuickSort } from './Sorters';
 
 import {
   isValidType,
@@ -63,6 +64,7 @@ export {
   PadInput,
   prop,
   Queue,
+  QuickSort,
   Stack,
   swap,
   trace,
