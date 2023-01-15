@@ -270,6 +270,25 @@ export const dataWithDatesDescending = [
   },
 ];
 
+export const moreDates = [
+  {
+    id: 1,
+    expires: '1/1/2023',
+  },
+  {
+    id: 2,
+    expires: '7/3/2021',
+  },
+  {
+    id: 3,
+    expires: '5/1/2022',
+  },
+  {
+    id: 4,
+    expires: '7/1/2022',
+  },
+];
+
 export const dataToPassQuickSortCoverage = [
   {
     name: 'sally',

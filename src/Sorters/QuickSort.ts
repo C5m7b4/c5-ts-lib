@@ -9,10 +9,13 @@ const partition = <T>(
   left: number,
   right: number,
   asc: boolean,
-  property?: keyof T
+  property?: keyof T,
+  isDate?: boolean
 ) => {
   const pivot = property
-    ? items[Math.floor((right + left) / 2)][property]
+    ? isDate
+      ? new Date(items[Math.floor((right + left) / 2)][property] as string)
+      : items[Math.floor((right + left) / 2)][property]
     : items[Math.floor((right + left) / 2)];
 
   let i = left;
@@ -20,16 +23,32 @@ const partition = <T>(
 
   while (i <= j) {
     if (property) {
-      while (items[i][property] < pivot && asc) {
+      while (
+        isDate
+          ? new Date(items[i][property] as string) < pivot && asc
+          : items[i][property] < pivot && asc
+      ) {
         i++;
       }
-      while (items[i][property] > pivot && !asc) {
+      while (
+        isDate
+          ? new Date(items[i][property] as string) > pivot && !asc
+          : items[i][property] > pivot && !asc
+      ) {
         i++;
       }
-      while (items[j][property] > pivot && asc) {
+      while (
+        isDate
+          ? new Date(items[j][property] as string) > pivot && asc
+          : items[j][property] > pivot && asc
+      ) {
         j--;
       }
-      while (items[j][property] < pivot && !asc) {
+      while (
+        isDate
+          ? new Date(items[j][property] as string) < pivot && !asc
+          : items[j][property] < pivot && !asc
+      ) {
         j--;
       }
     } else {
@@ -61,19 +80,25 @@ const qs = <T>(
   left: number,
   right: number,
   asc: boolean,
-  property?: keyof T
+  property?: keyof T,
+  isDate?: boolean
 ): T[] => {
-  const index = partition(items, left, right, asc, property);
+  const index = partition(items, left, right, asc, property, isDate);
   if (left < index - 1) {
-    qs(items, left, index - 1, asc, property);
+    qs(items, left, index - 1, asc, property, isDate);
   }
   if (index < right) {
-    qs(items, index, right, asc, property);
+    qs(items, index, right, asc, property, isDate);
   }
   return items;
 };
 
-export const QuickSort = <T>(items: T[], asc = true, property?: keyof T) => {
+export const QuickSort = <T>(
+  items: T[],
+  asc = true,
+  property?: keyof T,
+  isDate = false
+) => {
   if (!Array.isArray(items)) {
     throw new Error(
       'you must pass in an array as the first argument to QuickSort'
@@ -82,7 +107,7 @@ export const QuickSort = <T>(items: T[], asc = true, property?: keyof T) => {
 
   if (items.length > 0) {
     const copyOfItems = [...items];
-    return qs(copyOfItems, 0, copyOfItems.length - 1, asc, property);
+    return qs(copyOfItems, 0, copyOfItems.length - 1, asc, property, isDate);
   } else {
     throw new Error('you must at least specify some items i an array');
   }

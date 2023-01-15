@@ -188,3 +188,10 @@ console.log('bubbleSortedAsc', bubbleSortedAsc);
 const jumbled = [5, 2, 4, 1, 3];
 const bs = BubbleSort(jumbled);
 console.log('jumbled', bs);
+
+import { dataWithDates, moreDates } from '../tests/data';
+
+const quickSortedDates = QuickSort(dataWithDates, true, 'expires', true);
+console.log('quickSortedDates', quickSortedDates);
+const quickSortedDatesDesc = QuickSort(moreDates, false, 'expires', true);
+console.log('quickSortedDatesDesc', quickSortedDatesDesc);

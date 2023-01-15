@@ -12,6 +12,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [addDays](#adddays)
 - [append](#append)
 - [Box](#box)
+- [Bubble Sort](#bubble-sort)
 - [compose](#compose)
 - [curry](#curry)
 - [date](#date)
@@ -40,6 +41,10 @@ This function just appends two strings
 ## Box
 
 This monad has many uses. It allow you to map over your data to transform it into anything you want.
+
+## Bubble Sort
+
+A sorting algorithm that loops through all the elements and compares the current element to the next element and uses a swapping technique to handle the sorting
 
 ## compose
 
