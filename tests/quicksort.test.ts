@@ -10,6 +10,7 @@ import {
   dataWithDatesDescending,
   dataToPassQuickSortCoverage,
   dataToPassQuickSortCoverageDescending,
+  moreDates,
 } from './data';
 
 describe('quicksort tests', () => {
@@ -35,7 +36,7 @@ describe('quicksort tests', () => {
     expect(() => QuickSort(null)).toThrowError();
   });
 
-  test('should sort numberers descending', () => {
+  test('should sort numbers descending', () => {
     const arr = [5, 3, 7, 6, 2, 9];
     const result = QuickSort(arr, false);
     expect(result).toEqual([9, 7, 6, 5, 3, 2]);
@@ -83,14 +84,32 @@ describe('quicksort tests', () => {
     expect(result).toEqual(dataByDescriptionDescending);
   });
 
-  test.skip('should sort an array of objects by date ascending', () => {
-    const result = QuickSort(dataWithDates, true, 'expires');
+  test('should sort an array of objects by date ascending', () => {
+    const result = QuickSort(dataWithDates, true, 'expires', true);
     expect(result).toEqual(dataWithDates);
   });
 
-  test.skip('should sort an array of objects by date descending', () => {
-    const result = QuickSort(dataWithDates, false, 'expires');
+  test('should sort an array of objects by date descending', () => {
+    const result = QuickSort(dataWithDates, false, 'expires', true);
     expect(result).toEqual(dataWithDatesDescending);
+    expect(QuickSort(moreDates, false, 'expires', true)).toEqual([
+      {
+        id: 1,
+        expires: '1/1/2023',
+      },
+      {
+        id: 4,
+        expires: '7/1/2022',
+      },
+      {
+        id: 3,
+        expires: '5/1/2022',
+      },
+      {
+        id: 2,
+        expires: '7/3/2021',
+      },
+    ]);
   });
 
   test('should help fix code coverage with more sorting examples', () => {

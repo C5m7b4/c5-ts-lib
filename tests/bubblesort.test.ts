@@ -78,8 +78,8 @@ describe('bubblesort tests', () => {
     expect(result1).toEqual([1, 2, 3, 4, 5]);
   });
 
-  // test('should sort test data descending', () => {
-  //   const result = BubbleSort(testFixData, false, 'category');
-  //   expect(result).toEqual(testFixDataDesc);
-  // });
+  test('should sort test data descending', () => {
+    const result = BubbleSort(testFixData, false, 'category');
+    expect(result).toEqual(testFixDataDesc);
+  });
 });
