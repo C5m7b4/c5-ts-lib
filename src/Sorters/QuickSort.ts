@@ -80,7 +80,7 @@ export const QuickSort = <T>(items: T[], asc = true, property?: keyof T) => {
     );
   }
 
-  if (items.length > 1) {
+  if (items.length > 0) {
     const copyOfItems = [...items];
     return qs(copyOfItems, 0, copyOfItems.length - 1, asc, property);
   } else {

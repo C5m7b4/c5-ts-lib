@@ -365,3 +365,33 @@ export const dataToPassQuickSortCoverageDescending = [
     name: 'alyssa',
   },
 ];
+
+export const testFixData = [
+  {
+    id: 1,
+    category: 5,
+  },
+  {
+    id: 2,
+    category: 3,
+  },
+  {
+    id: 3,
+    category: 10,
+  },
+];
+
+export const testFixDataDesc = [
+  {
+    id: 3,
+    category: 10,
+  },
+  {
+    id: 1,
+    category: 5,
+  },
+  {
+    id: 2,
+    category: 3,
+  },
+];

@@ -179,3 +179,12 @@ const sortedAsc = QuickSort(numbers);
 console.log('asc', sortedAsc);
 const sortedDesc = QuickSort(numbers, false);
 console.log('desc', sortedDesc);
+
+import { BubbleSort } from '../src';
+
+const bubbleSortedAsc = BubbleSort(numbers);
+console.log('bubbleSortedAsc', bubbleSortedAsc);
+
+const jumbled = [5, 2, 4, 1, 3];
+const bs = BubbleSort(jumbled);
+console.log('jumbled', bs);

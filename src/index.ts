@@ -25,6 +25,7 @@ import { Id } from './Id';
 import { Box } from './Box';
 import { Maybe } from './Maybe';
 import { QuickSort } from './Sorters';
+import { BubbleSort } from './Sorters';
 
 import {
   isValidType,
@@ -41,6 +42,7 @@ export {
   addDays,
   append,
   Box,
+  BubbleSort,
   compose,
   curry,
   getDayOfDate,
