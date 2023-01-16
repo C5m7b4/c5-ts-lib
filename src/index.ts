@@ -27,6 +27,7 @@ import { Maybe } from './Maybe';
 import { QuickSort } from './Sorters';
 import { BubbleSort } from './Sorters';
 import { PubSub } from './Patterns';
+import { Conditional } from './Conditional';
 
 import {
   isValidType,
@@ -45,6 +46,7 @@ export {
   Box,
   BubbleSort,
   compose,
+  Conditional,
   curry,
   getDayOfDate,
   getMonthName,
