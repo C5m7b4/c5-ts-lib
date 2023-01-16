@@ -26,6 +26,7 @@ import { Box } from './Box';
 import { Maybe } from './Maybe';
 import { QuickSort } from './Sorters';
 import { BubbleSort } from './Sorters';
+import { PubSub } from './Patterns';
 
 import {
   isValidType,
@@ -65,6 +66,7 @@ export {
   PadDirection,
   PadInput,
   prop,
+  PubSub,
   Queue,
   QuickSort,
   Stack,

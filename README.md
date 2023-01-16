@@ -23,6 +23,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [Maybe](#maybe)
 - [pad](#pad)
 - [prop](#prop)
+- [PubSub](#pubsub)
 - [QuickSort](#quicksort)
 - [Queue](#queue)
 - [Stack](#stack)
@@ -81,6 +82,10 @@ Another monad, but this one handle null input very well
 ## pad
 
 This function will either left or right pad a string for you
+
+## PubSub
+
+A really nice publisher/subscriber algorithm
 
 ## prop
 

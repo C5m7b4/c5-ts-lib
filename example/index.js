@@ -195,3 +195,34 @@ const quickSortedDates = QuickSort(dataWithDates, true, 'expires', true);
 console.log('quickSortedDates', quickSortedDates);
 const quickSortedDatesDesc = QuickSort(moreDates, false, 'expires', true);
 console.log('quickSortedDatesDesc', quickSortedDatesDesc);
+
+import { PubSub } from '../src';
+
+const toast1Container = document.createElement('div');
+toast1Container.id = 'toast1';
+toast1Container.innerHTML = 'here are my toasts';
+document.body.appendChild(toast1Container);
+
+const subscriptionResponse = (msg) => {
+  const div = document.getElementById('toast1');
+  div.innerHTML = msg;
+  console.log('msg', msg);
+};
+
+const toast1 = PubSub();
+toast1.subscribe(subscriptionResponse);
+
+toast1.publish('here is my first toast');
+
+const toast2Container = document.createElement('div');
+toast2Container.id = 'toast2';
+toast2Container.innerHTML = 'here is my second toast container';
+document.body.appendChild(toast2Container);
+
+const toast2 = toast1;
+toast2.subscribe((msg) => {
+  const div = document.getElementById('toast2');
+  div.innerHTML = msg;
+  console.log('toast2', msg);
+});
+toast1.publish('here is a new message');
