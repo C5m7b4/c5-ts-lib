@@ -1,4 +1,4 @@
-import { Add } from './math';
+import { Add, Sub } from './math';
 import {
   addDays,
   append,
@@ -72,6 +72,7 @@ export {
   Queue,
   QuickSort,
   Stack,
+  Sub,
   swap,
   trace,
   traceMap,
