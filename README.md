@@ -14,6 +14,7 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 - [Box](#box)
 - [Bubble Sort](#bubble-sort)
 - [compose](#compose)
+- [Conditional](#conditional)
 - [curry](#curry)
 - [date](#date)
 - [formatDate](#formatdate)
@@ -50,6 +51,10 @@ A sorting algorithm that loops through all the elements and compares the current
 ## compose
 
 This function will chain together a number of functions passing the output of each function to the input of the next function
+
+## Conditional
+
+A super sweet functional function to handle if/else/then
 
 ## curry
 

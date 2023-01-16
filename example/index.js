@@ -226,3 +226,60 @@ toast2.subscribe((msg) => {
   console.log('toast2', msg);
 });
 toast1.publish('here is a new message');
+
+import { Conditional } from '../src';
+
+const hasGoodRating = (rating) => rating > 4;
+
+const priceChange = Conditional({
+  if: () => (x) => x > 4,
+  then: (rating) => 1000 * rating,
+  else: () => 1000,
+});
+
+const getDescription = Conditional({
+  if: hasGoodRating,
+  then: () => 'good car',
+  else: () => 'bad car',
+});
+
+function getCarConfig(car) {
+  return {
+    newPrice: priceChange(car.rating) + car.price,
+    description: getDescription(car.rating),
+  };
+}
+
+const car = {
+  rating: 5,
+  price: 1.99,
+};
+
+const carResult = getCarConfig(car);
+console.log('carresult', carResult);
+
+const hasPrice = Conditional({
+  if: (price) => typeof price === 'number',
+  then: (price) => price,
+  else: () => 'no price present',
+});
+
+const items = [
+  {
+    id: 1,
+    description: 'penut butter',
+    price: 1.1,
+  },
+  {
+    id: 2,
+    description: 'jelly',
+    price: '',
+  },
+];
+
+const processItems = (data) =>
+  Box(data)
+    .map((x) => x.map((r) => ({ ...r, price: hasPrice(r.price) })))
+    .fold((x) => x);
+
+console.log(processItems(items));
