@@ -1,11 +1,11 @@
 {
   "name": "c5-ts-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a small typescript library to give you tools for your developement",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-  "files":[
+  "files": [
     "dist"
   ],
   "scripts": {
@@ -20,7 +20,12 @@
     "type": "git",
     "url": "https://github.com/C5m7b4/c5-ts-lib"
   },
-  "keywords": ["typescript", "functional", "algorithms", "patters"],
+  "keywords": [
+    "typescript",
+    "functional",
+    "algorithms",
+    "patters"
+  ],
   "author": "C5m7b4",
   "license": "MIT",
   "devDependencies": {
