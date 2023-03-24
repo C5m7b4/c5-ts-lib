@@ -22,4 +22,7 @@ describe('formatMoney', () => {
   test('should exclude dollar sign', () => {
     expect(formatMoney('2.35', false)).toEqual('2.35');
   });
+  test('should handle negative number without decimal', () => {
+    expect(formatMoney(-5)).toEqual('-5');
+  });
 });

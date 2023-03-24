@@ -8,6 +8,7 @@ export const formatMoney = (
   if (!isValid(input)) return '0.00';
   input = input.toString();
   const pos = input.indexOf('.');
+  if (pos < 0) return input;
   const left = input.substring(0, pos);
   let right = input.substring(pos + 1);
   if (right.length === 1) {
