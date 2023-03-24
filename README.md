@@ -35,10 +35,20 @@ This is my attempt at a typescript library aimed at helping make peoples lives a
 ## addDays
 
 This function will let you either pass in a string or a date object and it will add the specified days to it. If you pass in null or undefined, you will get back a new Date;
+ex:
+
+```js
+addDays('1/1/2023', 7)
+```
 
 ## append
 
 This function just appends two strings
+ex: 
+
+```js
+expect(append('thing')('some')).toEqual('something');
+```
 
 ## Box
 
